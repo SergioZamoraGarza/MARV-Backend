@@ -8,11 +8,12 @@ var bodyParser = require("body-parser");
 var app = express();
 
 //Cargar ficheros rutas
+var article_routes = require("./routes/article");
 
 //Middlewares
-//Convierte a json lo que llegue del body
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
+//Convierte a json lo que llegue del body -bodyparser a express-
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
 //CORS
 // Configurar cabeceras y cors
@@ -25,16 +26,7 @@ app.use((req, res, next) => {
 });
 
 //Añadir prefijos a rutas
-
-//Ruta o metodo de prueba
-app.get("/probando", (req,res)=>{
-    res.status(200).send({
-        curso:"Master en Frameworks JS",
-        autor: "Sergio",
-        url:"localhost.com"
-    });
-});
-
+app.use("/api",article_routes);
 
 //Exportar modulo (fichero actual)
 module.exports =app;
