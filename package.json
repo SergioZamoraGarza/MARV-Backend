@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "API RestFul Master en Frameworks JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioZamoraGarza/MARV-Backend.git"
+  },
+  "author": "Sergio Zamora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SergioZamoraGarza/MARV-Backend/issues"
+  },
+  "homepage": "https://github.com/SergioZamoraGarza/MARV-Backend#readme"
+}
