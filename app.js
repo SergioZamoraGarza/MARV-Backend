@@ -2,7 +2,7 @@
 
 //Cargar modulos de node para crear servidor
 var express = require("express");
-var bodyParser = require("body-parser");
+/* var bodyParser = require("body-parser"); */
 
 //Ejecturar express (http)
 var app = express();
